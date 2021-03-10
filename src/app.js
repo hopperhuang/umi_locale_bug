@@ -19,7 +19,7 @@ export async function getInitialState() {
   /** 模拟获取用户信息 */
   await delay();
   return {
-    name: 'my_name_is_maoyan',
+    name: 'my_name_is_kawi',
     currentUser: {
       name: 'my_manager',
     },
@@ -43,7 +43,7 @@ export const layout = (props) => {
       return (
         <Dropdown overlay={menu}>
           <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
-            My Name Is MaoYan
+            My Name Is kawi
           </a>
         </Dropdown>
       );
