@@ -80,13 +80,11 @@ export const locale = {
     const { locale: language = 'en-US' } = qs.parse(search, {
       ignoreQueryPrefix: true,
     });
+    console.log(language, 'language');
     return language;
   },
-  setLocale({ lang, realReload, updater }) {
+  setLocale({ lang, updater }) {
     history.push(`/?locale=${lang}`);
-    if (realReload) {
-      window.location.reload();
-    }
     updater();
   },
 };
