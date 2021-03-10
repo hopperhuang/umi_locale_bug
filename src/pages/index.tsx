@@ -9,7 +9,7 @@ export default function IndexPage() {
       <div>
         <Button
           onClick={() => {
-            setLocale('zh-TW', true);
+            setLocale('zh-TW', false);
           }}
         >
           change language
